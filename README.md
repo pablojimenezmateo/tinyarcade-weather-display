@@ -3,7 +3,7 @@ TinyArcade weather display
 
 Author: Pablo Jiménez Mateo
 
-![ScreenShot](https://raw.github.com/gef3233/tinyarcade-weather-display/master/preview.gif)
+![ScreenShot](https://raw.githubusercontent.com/pjimenezmateo/tinyarcade-weather-display/master/preview.gif)
 
 I love my [TinyArcade](https://tinycircuits.com/collections/kits/products/tinyarcade) but I wanted some use of it when I was not playing with it.
 
