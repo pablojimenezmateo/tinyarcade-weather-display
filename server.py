@@ -1,6 +1,8 @@
 import serial
 import time
 import urllib, json
+import datetime
+import math
 
 #WOEID, to find the WOEID for your city you should go to http://woeid.rosselliot.co.nz/lookup/leganes
 WOEID = 765045
@@ -29,6 +31,8 @@ while 1:
 	code = current_forecast['code']
 	high = current_forecast['high']
 	low  = current_forecast['low']
+
+	current_temperature = data['query']['results']['channel']['item']['condition']['temp']
 	
 	found = False
 
@@ -45,9 +49,10 @@ while 1:
 
 	if found:
 
+		now = datetime.datetime.now()
+
 		print "Your weather is served"
-		ser.write(str(code) + "#" + str(high) + "#" + str(low) + "#")
-		ser.close()
+		ser.write(str(code) + "#" + str(high) + "#" + str(low) + "#" + str(current_temperature) + "#" + str(now.hour) + "#" + str(now.minute) + "#" + str(now.second) + "#")
 
     #Retry in 5 minutes
 	time.sleep(300)

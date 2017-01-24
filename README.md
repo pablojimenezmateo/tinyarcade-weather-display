@@ -16,6 +16,7 @@ Requirements
 * Arduino IDE
 * A USB to MicroUSB cable
 * A TinyArcade
+* The [Time](https://github.com/PaulStoffregen/Time) library
 
 Setup
 -------------
@@ -35,6 +36,8 @@ Setup
     - Under Tools, make sure the board is TinyScreen+, the Build Option is TinyArcade Menu, you have selected the right port and the Programmer is AVRISP mkll
 
 ### Setup your server/computer
+
+- Download the [Time](https://github.com/PaulStoffregen/Time) library on your library folder
 
 - You need the Where On Earth Identifier to know the weather of which city to display. To find the WOEID of your city (or the city you want the weather information of) go to [http://woeid.rosselliot.co.nz/lookup](http://woeid.rosselliot.co.nz/lookup) and search for your city, it will give you a numeric code
 
